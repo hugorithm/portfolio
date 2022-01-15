@@ -64,7 +64,7 @@ const Page = () => {
             </BioSection>
             <BioSection>
                 <BioYear>2019 to present</BioYear>
-                Started working at Idryl Technologies
+                Started working at Idryl Technologies as a full-stack developer
             </BioSection>
         </Container>
     );
