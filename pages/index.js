@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
+import { BioSection, BioYear } from "../components/bio";
 
 const Page = () => {
     return (
@@ -52,7 +53,19 @@ const Page = () => {
                     piano and electric guitar 😁.
                 </Paragraph>
             </Section>
-            
+            <BioSection>
+                <BioYear>1997</BioYear>
+                Born in Braga, Portugal.
+            </BioSection>
+            <BioSection>
+                <BioYear>2021</BioYear>
+                Completed his Master&apos;s in Engineering and Management of Information Systems
+                at University of Minho
+            </BioSection>
+            <BioSection>
+                <BioYear>2019 to present</BioYear>
+                Started working at Idryl Technologies
+            </BioSection>
         </Container>
     );
 }
