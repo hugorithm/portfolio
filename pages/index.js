@@ -11,12 +11,13 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
+import { GoTerminal } from 'react-icons';
 
 const Page = () => {
     return (
         <Container maxW='auto'>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} align="center">
-                Hello, I&apos;m a Software Engineer from Portugal with a passion for technology!
+                Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -62,7 +63,7 @@ const Page = () => {
                         <Button ml={5} colorScheme="facebook">My CV 📄</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
-                        <Button ml={5} colorScheme="facebook">Email me! 📧 </Button>
+                        <Button ml={5} colorScheme="facebook">Email me! 📧</Button>
                     </NextLink>
                 </Box>
             </Section>
