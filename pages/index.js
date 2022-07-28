@@ -60,7 +60,7 @@ const Page = () => {
             <Section delay={0.1}>
                 <Box align="center" my={4}>
                     <NextLink href="/curriculum" passHref>
-                        <Button rightIcon={<ChevronRightIcon></ChevronRightIcon>} colorScheme="twitter">My Curriculum Vitae 📄 </Button>
+                        <Button colorScheme="twitter">My Curriculum Vitae 📄</Button>
                     </NextLink>
                 </Box>
             </Section>
