@@ -15,7 +15,7 @@ const Page = () => {
     return (
         <Container maxW='60vw'>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} align="center">
-                Hello, I&apos;m a software engineer from Portugal!
+                Hello, I&apos;m a Software Engineer from Portugal!
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -81,7 +81,7 @@ const Page = () => {
                 </Heading>
                 <Paragraph>
                     <NextLink href="/documents/CV.pdf" passHref>
-                        <Link>My Curriculum Vitae 📄</Link>
+                        <Link><strong>My Curriculum Vitae 📄</strong></Link>
                     </NextLink>
                 </Paragraph>
 
