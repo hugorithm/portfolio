@@ -47,7 +47,7 @@ const Page = () => {
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Bio
+                    Biography
                 </Heading>
                 <Paragraph>
                     Hi, I'm Hugo! I'm a Software Engineer from Portugal with a passion for technology.
@@ -79,7 +79,7 @@ const Page = () => {
                 <BioSection>
                     <BioYear>2020</BioYear>
                     Started working on his Master&apos;s Dissertation &nbsp;
-                    <NextLink href="/documents/Master_Thesis.pdf" passHref>
+                    <NextLink href="/masters" passHref>
                         <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
                     </NextLink>
                 </BioSection>
@@ -94,7 +94,7 @@ const Page = () => {
                     Things I ❤
                 </Heading>
                 <Paragraph>
-                    Music 🎸🎶, Poetry 📜🖋, Photography 📷, Games 🎮
+                    Software Engineering 💻, Music 🎸🎶, Poetry 📜🖋, Photography 📷, Games 🎮
                 </Paragraph>
             </Section>
         </Container>
