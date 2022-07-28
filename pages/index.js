@@ -1,18 +1,20 @@
-import { 
-    Container, 
-    Box, 
-    Heading, 
-    Image, 
-    useColorModeValue 
+import {
+    Container,
+    Box,
+    Heading,
+    Image,
+    useColorModeValue,
+    Link
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
+import NextLink from "next/link";
 
 const Page = () => {
     return (
-        <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} align="center">
+        <Container maxW='60vw'>
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} align="center">
                 Hello, I&apos;m a software engineer from Portugal!
             </Box>
 
@@ -29,8 +31,8 @@ const Page = () => {
                     ml={{ md: 6 }}
                     align="center"
                 >
-                    <Image 
-                        borderColor="whiteAlpha.800" 
+                    <Image
+                        borderColor="whiteAlpha.800"
                         borderWidth={2}
                         borderStyle="solid"
                         maxWidth="100px"
@@ -58,26 +60,31 @@ const Page = () => {
                 Born in Braga, Portugal.
             </BioSection>
             <BioSection>
-                <BioYear>2019 to present</BioYear>
+                <BioYear>2019 to Present</BioYear>
                 Started working at Idryl Technologies as a full-stack developer
             </BioSection>
             <BioSection>
                 <BioYear>2020</BioYear>
-                Started working on his Master&apos;s Dissertation <strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong>
+                Started working on his Master&apos;s Dissertation &nbsp;
+                <NextLink href="/documents/Master_Thesis.pdf" passHref>
+                    <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
+                </NextLink>
             </BioSection>
             <BioSection>
                 <BioYear>2021</BioYear>
                 Completed his Master&apos;s in Engineering and Management of Information Systems
-                at University of Minho
+                at University of Minho with a grade of 19 ou of 20
             </BioSection>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
                     CV
                 </Heading>
                 <Paragraph>
-                    My CV 😄
+                    <NextLink href="/documents/CV.pdf" passHref>
+                        <Link>My Curriculum Vitae 📄</Link>
+                    </NextLink>
                 </Paragraph>
-                
+
             </Section>
         </Container>
     );
