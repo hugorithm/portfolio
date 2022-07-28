@@ -4,12 +4,14 @@ import {
     Heading,
     Image,
     useColorModeValue,
-    Link
+    Link,
+    Button
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Page = () => {
     return (
@@ -55,36 +57,45 @@ const Page = () => {
                     piano and electric guitar 😁.
                 </Paragraph>
             </Section>
-            <BioSection>
-                <BioYear>1997</BioYear>
-                Born in Braga, Portugal.
-            </BioSection>
-            <BioSection>
-                <BioYear>2019 to Present</BioYear>
-                Started working at Idryl Technologies as a Full-stack Developer
-            </BioSection>
-            <BioSection>
-                <BioYear>2020</BioYear>
-                Started working on his Master&apos;s Dissertation &nbsp;
-                <NextLink href="/documents/Master_Thesis.pdf" passHref>
-                    <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
-                </NextLink>
-            </BioSection>
-            <BioSection>
-                <BioYear>2021</BioYear>
-                Completed his Master&apos;s in Engineering and Management of Information Systems
-                at University of Minho with a grade of 19 ou of 20
-            </BioSection>
+            <Section delay={0.1}>
+                <Box align="center" my={4}>
+                    <NextLink href="/CV" passHref>
+                        <Button rightIcon={<ChevronRightIcon></ChevronRightIcon>} colorScheme="twitter">My Curriculum Vitae 📄 </Button>
+                    </NextLink>
+                </Box>
+            </Section>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    CV
+                    Experience & Events
+                </Heading>
+                <BioSection>
+                    <BioYear>1997</BioYear>
+                    Born in Braga, Portugal.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019 to Present</BioYear>
+                    Started working at Idryl Technologies as a Full-stack Developer
+                </BioSection>
+                <BioSection>
+                    <BioYear>2020</BioYear>
+                    Started working on his Master&apos;s Dissertation &nbsp;
+                    <NextLink href="/documents/Master_Thesis.pdf" passHref>
+                        <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
+                    </NextLink>
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Completed his Master&apos;s in Engineering and Management of Information Systems
+                    at University of Minho with a grade of 19 ou of 20
+                </BioSection>
+            </Section>
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Things I ❤
                 </Heading>
                 <Paragraph>
-                    <NextLink href="/documents/CV.pdf" passHref>
-                        <Link><strong>My Curriculum Vitae 📄</strong></Link>
-                    </NextLink>
+                    Music 🎸🎶, Poetry 📜🖋, Photography 📷, Games 🎮
                 </Paragraph>
-
             </Section>
         </Container>
     );
