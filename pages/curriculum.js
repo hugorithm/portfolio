@@ -5,7 +5,7 @@ import Section from '../components/section'
 
 const Curriculum = () => (
     <Layout title="Curriculum Vitae">
-        <Container>
+        <Container maxW='auto'>
             <Heading as="h3" fontSize={20} mb={4}>
                 Curriculum Vitae
             </Heading>
