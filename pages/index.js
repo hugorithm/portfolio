@@ -46,10 +46,10 @@ const Page = () => {
                     Bio
                 </Heading>
                 <Paragraph>
-                    Hugo is a full-stack developer from Portugal
-                    with a passion for technology. He likes to learn and evolve with the projects he participates in while still adding value to the
+                    Hi, I'm Hugo! I'm a Software Engineer from Portugal with a passion for technology.
+                    I like to learn and evolve with the projects I participate in while still adding value to the
                     final product and watching the evolution of a prototype, from its initial development phases to a
-                    final solution. He is very attentive to the new tendencies and innovations in technology. When offline he loves to play
+                    final solution. I'm very attentive to the new tendencies and innovations in technology. When offline, I love to play
                     piano and electric guitar 😁.
                 </Paragraph>
             </Section>
@@ -58,14 +58,27 @@ const Page = () => {
                 Born in Braga, Portugal.
             </BioSection>
             <BioSection>
+                <BioYear>2019 to present</BioYear>
+                Started working at Idryl Technologies as a full-stack developer
+            </BioSection>
+            <BioSection>
+                <BioYear>2020</BioYear>
+                Started working on his Master&apos;s Dissertation <strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong>
+            </BioSection>
+            <BioSection>
                 <BioYear>2021</BioYear>
                 Completed his Master&apos;s in Engineering and Management of Information Systems
                 at University of Minho
             </BioSection>
-            <BioSection>
-                <BioYear>2019 to present</BioYear>
-                Started working at Idryl Technologies as a full-stack developer
-            </BioSection>
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    CV
+                </Heading>
+                <Paragraph>
+                    My CV 😄
+                </Paragraph>
+                
+            </Section>
         </Container>
     );
 }
