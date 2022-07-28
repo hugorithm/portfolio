@@ -69,11 +69,8 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
-                    <LinkItem href="/CV" path={path}> 
-                        CV
-                    </LinkItem>
-                    <LinkItem href="/Projects" path={path}> 
-                        Projects
+                    <LinkItem href="/curriculum" path={path}> 
+                        Curriculum Vitae
                     </LinkItem>
               
                 </Stack>
@@ -91,10 +88,10 @@ const Navbar = props => {
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="/CV" passHref>
-                                    <MenuItem as={Link}>CV</MenuItem>
+                                <NextLink href="/curriculum" passHref>
+                                    <MenuItem as={Link}>Curriculum Vitae</MenuItem>
                                 </NextLink>
-                                <NextLink href="/Projects" passHref>
+                                <NextLink href="/projects" passHref>
                                     <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href="https://github.com/hugorithm">

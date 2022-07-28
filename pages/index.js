@@ -59,7 +59,7 @@ const Page = () => {
             </Section>
             <Section delay={0.1}>
                 <Box align="center" my={4}>
-                    <NextLink href="/CV" passHref>
+                    <NextLink href="/curriculum" passHref>
                         <Button rightIcon={<ChevronRightIcon></ChevronRightIcon>} colorScheme="twitter">My Curriculum Vitae 📄 </Button>
                     </NextLink>
                 </Box>
