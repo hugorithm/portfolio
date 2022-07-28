@@ -13,7 +13,7 @@ import NextLink from "next/link";
 
 const Page = () => {
     return (
-        <Container maxW='60vw'>
+        <Container maxW='auto'>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} align="center">
                 Hello, I&apos;m a Software Engineer from Portugal!
             </Box>
@@ -61,7 +61,7 @@ const Page = () => {
             </BioSection>
             <BioSection>
                 <BioYear>2019 to Present</BioYear>
-                Started working at Idryl Technologies as a full-stack developer
+                Started working at Idryl Technologies as a Full-stack Developer
             </BioSection>
             <BioSection>
                 <BioYear>2020</BioYear>
