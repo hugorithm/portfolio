@@ -99,7 +99,7 @@ const Page = () => {
                 <BioSection>
                     <BioYear>2021</BioYear>
                     Completed his Master&apos;s in Engineering and Management of Information Systems
-                    at University of Minho with a grade of 19 ou of 20
+                    at University of Minho with a grade of 19 out of 20
                 </BioSection>
             </Section>
             <Section delay={0.1}>
