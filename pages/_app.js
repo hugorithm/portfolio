@@ -2,7 +2,8 @@ import { ChakraProvider } from "@chakra-ui/provider";
 import Layout from "../components/layouts/main";
 import theme from "../libs/theme";
 import Fonts from "../components/fonts";
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion';
+import '../css/style.css';
 
 const Website = ({ Component, pageProps, router }) => {
     return (

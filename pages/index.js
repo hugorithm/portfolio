@@ -5,25 +5,30 @@ import {
     Image,
     useColorModeValue,
     Link,
-    Button
+    Button,
+    Text
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
-import { GoTerminal } from 'react-icons';
+
 
 const Page = () => {
     return (
         <Container maxW='auto'>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} align="center">
-                Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="center" whiteSpace={"break-spaces"} fontFamily={"'Fira Code', monospace"} className="typewriter">
+                <Paragraph>$ Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Paragraph>
             </Box>
 
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        Hugo Silva
+                    <Heading as="h2" variant="page-title" display="flex" gap={2}>
+                        Hugo
+                        <Text color={useColorModeValue('1A202C', '#57e296') } w="auto">
+                            Silva
+                        </Text>
+
                     </Heading>
                     <p>Software Engineer 💻</p>
                 </Box>
