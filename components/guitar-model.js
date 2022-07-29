@@ -54,6 +54,16 @@ const GuitarModel = () => {
             // 640 -> 240
             // 8   -> 6
         
+
+            const scale = scH * 0.004;
+            const camera = new THREE.OrthographicCamera(
+              -scale,
+              scale,
+              scale,
+              -4,
+              0.01,
+              50000
+            )
         
             // const camera = new THREE.OrthographicCamera(
             //   -0.5,
@@ -64,14 +74,14 @@ const GuitarModel = () => {
             //   50
             // )
 
-            const camera = new THREE.OrthographicCamera(
-                -300,
-                300,
-                300,
-                -500,
-                -100000,
-                1000000
-            )
+            // const camera = new THREE.OrthographicCamera(
+            //     -300,
+            //     300,
+            //     300,
+            //     -500,
+            //     -100000,
+            //     1000000
+            // )
 
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
@@ -85,7 +95,7 @@ const GuitarModel = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/ibby3.glb', {
+            loadGLTFModel(scene, '/laptop.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
