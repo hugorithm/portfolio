@@ -1,12 +1,13 @@
 import Head from "next/head"
 import Navbar from "../navbar.js";
 import dynamic from 'next/dynamic';
-import { Container, Box } from "@chakra-ui/react";
-import GuitarLoader from '../guitar-model-loader'
+import { Container, Box, Divider } from "@chakra-ui/react";
+import GuitarLoader from '../guitar-model-loader';
+import Footer from "../footer.js";
 
 const Model = dynamic(() => import('../guitar-model'), {
-  ssr: false,
-  loading: () => <GuitarLoader />
+    ssr: false,
+    loading: () => <GuitarLoader />
 })
 
 
@@ -29,10 +30,11 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPAth} />
 
             <Container maxW="container.md" pt={14}>
-            <Model />
+                <Model />
 
                 {children}
             </Container>
+            <Footer />
         </Box>
     );
 }
