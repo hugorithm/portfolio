@@ -17,15 +17,16 @@ import NextLink from "next/link";
 const Page = () => {
     return (
         <Container maxW='auto'>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="center" whiteSpace={"break-spaces"} fontFamily={"'Fira Code', monospace"} className="typewriter">
-                <Paragraph>$ Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Paragraph>
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="left">
+                <Text color={useColorModeValue('#3d7aed','#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
+                <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text>
             </Box>
 
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title" display="flex" gap={2}>
                         Hugo
-                        <Text color={useColorModeValue('1A202C', '#57e296') } w="auto">
+                        <Text color={useColorModeValue('#3d7aed', '#57e296') } w="auto">
                             Silva
                         </Text>
 

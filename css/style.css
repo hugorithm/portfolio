@@ -1,18 +1,32 @@
-.typewriter p {
+body.chakra-ui-dark p.typewriter {
     font-family: 'Fira Code', monospace;
-    font-size: 12px;
+    font-size: 13px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 8px solid rgb(255, 255, 255); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     width: max-content;
     overflow: hidden;
     animation: 
-      typing 3.5s steps(30, end),
+      typing 3.5s steps(60, end),
       blink-caret 1s step-end infinite;
   }
   
+  body.chakra-ui-light p.typewriter {
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 8px solid rgb(53, 53, 53);  /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: max-content;
+    overflow: hidden;
+    animation: 
+      typing 3.5s steps(60, end),
+      blink-caret-dark 1s step-end infinite;
+  }
+
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -23,4 +37,9 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255) }
+  }
+
+  @keyframes blink-caret-dark {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(53, 53, 53) }
   }
