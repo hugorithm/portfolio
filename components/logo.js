@@ -13,12 +13,13 @@ const LogoBox = styled.span`
     padding: 10px;
     
     &:hover img {
-        transform: rotate(20deg);
+        transform: rotate(-10deg);
     }
 `;
 
 const Logo = () => {
-    const hsLogo = `/images/logoHugo${useColorModeValue('', '-dark')}.png`;
+    // const hsLogo = `/images/terminal${useColorModeValue('', '-dark')}.png`;
+    const hsLogo = `/images/terminal.png`;
     return (
         <Link href="/">
             <a>
