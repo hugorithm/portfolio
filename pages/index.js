@@ -66,10 +66,10 @@ const Page = () => {
             <Section delay={0.1}>
                 <Box align="center" my={4}>
                     <NextLink href="/curriculum" passHref>
-                        <Button ml={5} colorScheme="facebook">My CV 📄</Button>
+                        <Button ml={5} colorScheme="teal">My CV 📄</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
-                        <Button ml={5} colorScheme="facebook">Email me! 📧</Button>
+                        <Button ml={5} colorScheme="teal">Email me! 📧</Button>
                     </NextLink>
                 </Box>
             </Section>
