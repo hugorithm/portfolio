@@ -43,3 +43,35 @@ body.chakra-ui-dark p.typewriter {
     from, to { border-color: transparent }
     50% { border-color: rgb(53, 53, 53) }
   }
+
+body.chakra-ui-dark::-webkit-scrollbar-thumb, -moz-scrollbar-thumb {
+    background-color: #364158;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+body.chakra-ui-light::-webkit-scrollbar-thumb, -moz-scrollbar-thumb {
+    background-color: #3182ce;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar, -moz-scrollbar {
+    width: 8px;
+    height: 10px;
+    cursor: pointer;
+}
+
+body.chakra-ui-dark::-webkit-scrollbar-track, -moz-scrollbar-track {
+    -webkit-box-shadow: inset 2 2 6px rgba(0,0,0,.3);
+    border-radius: 1px;
+    background-color: #1a202c;
+    cursor: pointer;
+}
+
+body.chakra-ui-light::-webkit-scrollbar-track, -moz-scrollbar-track {
+    -webkit-box-shadow: inset 2 2 6px rgba(0,0,0,.3);
+    border-radius: 1px;
+    background-color: #dee4e7;
+    cursor: pointer;
+}
