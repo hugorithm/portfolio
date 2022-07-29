@@ -1,5 +1,5 @@
 # My Website
-![Hugo Silva](./public/images/website.jpg)
+![Hugo Silva](./public/images/website.png)
 
 This is my Website
 
