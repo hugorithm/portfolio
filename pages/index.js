@@ -13,13 +13,15 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
+import { MdEmail } from 'react-icons/md';
+import { IoDocumentText } from 'react-icons/io5';
 
 
 const Page = () => {
     return (
         <Container maxW='auto'>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.400', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="left">
-                <Text color={useColorModeValue('#3d7aed','#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
+                <Text color={useColorModeValue('#3d7aed', '#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
                 <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text>
             </Box>
 
@@ -27,7 +29,7 @@ const Page = () => {
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title" display="flex" gap={2}>
                         Hugo
-                        <Text color={useColorModeValue('#3d7aed', '#57e296') } w="auto">
+                        <Text color={useColorModeValue('#3d7aed', '#57e296')} w="auto">
                             Silva
                         </Text>
 
@@ -67,10 +69,10 @@ const Page = () => {
             <Section delay={0.1}>
                 <Box align="center" my={4}>
                     <NextLink href="/curriculum" passHref>
-                        <Button ml={5} colorScheme="teal">My CV 📄</Button>
+                        <Button ml={5} colorScheme="teal"><IoDocumentText/>&nbsp; My CV</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
-                        <Button ml={5} colorScheme="teal">Email me! 📧</Button>
+                        <Button ml={5} colorScheme="teal"><MdEmail/>&nbsp; Email me!</Button>
                     </NextLink>
                 </Box>
             </Section>
