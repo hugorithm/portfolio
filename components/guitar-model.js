@@ -67,8 +67,8 @@ const GuitarModel = () => {
             const camera = new THREE.OrthographicCamera(
                 -300,
                 300,
-                200,
-                -400,
+                300,
+                -500,
                 -100000,
                 1000000
             )
