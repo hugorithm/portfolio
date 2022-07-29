@@ -35,7 +35,7 @@ const Page = () => {
                         </Text>
 
                     </Heading>
-                    <p>Software Engineer 💻</p>
+                    <Text fontFamily={"'Fira Code', monospace"}>Software Engineer 💻</Text>
                 </Box>
                 <Box
                     flexShrink={0}
