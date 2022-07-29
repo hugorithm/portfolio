@@ -56,7 +56,7 @@ const Page = () => {
                 </Box>
             </Box>
             <Section delay={0.1}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Biography
                 </Heading>
                 <Paragraph>
@@ -78,7 +78,7 @@ const Page = () => {
                 </Box>
             </Section>
             <Section delay={0.1}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Experience & Events
                 </Heading>
                 <BioSection>
@@ -103,7 +103,7 @@ const Page = () => {
                 </BioSection>
             </Section>
             <Section delay={0.1}>
-                <Heading as="h3" variant="section-title">
+                <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Things I ❤
                 </Heading>
                 <Paragraph>
