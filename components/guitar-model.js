@@ -54,11 +54,21 @@ const GuitarModel = () => {
             // 640 -> 240
             // 8   -> 6
         
+        
+            // const camera = new THREE.OrthographicCamera(
+            //   -0.5,
+            //   0.5,
+            //   0.5,
+            //   -1.5,
+            //   -50,
+            //   50
+            // )
+
             const camera = new THREE.OrthographicCamera(
                 -300,
                 300,
                 200,
-                -500,
+                -400,
                 -100000,
                 1000000
             )
@@ -75,7 +85,7 @@ const GuitarModel = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/guitar.glb', {
+            loadGLTFModel(scene, '/ibby3.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
