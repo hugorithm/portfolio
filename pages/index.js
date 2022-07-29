@@ -22,7 +22,8 @@ const Page = () => {
         <Container maxW='auto'>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.200', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="left" border={useColorModeValue('1px solid ', '1px solid #fff')}>
                 <Text color={useColorModeValue('#3d7aed', '#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
-                <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text>
+                {/* <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text> */}
+                <Text className="typewriter">sudo ./load-3dmodel.sh -i -p 500</Text>
             </Box>
 
             <Box display={{ md: 'flex' }}>
