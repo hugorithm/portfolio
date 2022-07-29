@@ -8,7 +8,7 @@ body.chakra-ui-dark p.typewriter {
     width: max-content;
     overflow: hidden;
     animation: 
-      typing 3.5s steps(60, end),
+      typing 4.5s steps(60, end),
       blink-caret 1s step-end infinite;
   }
   
@@ -22,7 +22,7 @@ body.chakra-ui-dark p.typewriter {
     width: max-content;
     overflow: hidden;
     animation: 
-      typing 3.5s steps(60, end),
+      typing 4.5s steps(60, end),
       blink-caret-dark 1s step-end infinite;
   }
 
