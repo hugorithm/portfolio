@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-loggle-button";
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
@@ -88,7 +88,16 @@ const Navbar = props => {
                         pl={2}
                     >
                         <IoLogoGithub />
-                        GitHub
+                    </LinkItem>
+                    <LinkItem
+                        href="https://instagram.com/huqoferreira"
+                        path={path}>
+                        <IoLogoInstagram />
+                    </LinkItem>
+                    <LinkItem
+                        href="https://www.linkedin.com/in/hugoandrefsilva"
+                        path={path}>
+                        <IoLogoLinkedin />
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
@@ -118,6 +127,16 @@ const Navbar = props => {
                                     <IoLogoGithub />
                                     &nbsp;
                                     GitHub
+                                </MenuItem>
+                                <MenuItem as={Link} href="https://instagram.com/huqoferreira">
+                                    <IoLogoInstagram />
+                                    &nbsp;
+                                    Intagram
+                                </MenuItem>
+                                <MenuItem as={Link} href="https://www.linkedin.com/in/hugoandrefsilva">
+                                    <IoLogoLinkedin />
+                                    &nbsp;
+                                    LinkedIn
                                 </MenuItem>
                             </MenuList>
                         </Menu>
