@@ -53,18 +53,18 @@ const GuitarModel = () => {
 
             // 640 -> 240
             // 8   -> 6
-        
+
 
             const scale = scH * 0.004;
             const camera = new THREE.OrthographicCamera(
-              -scale,
-              scale,
-              scale,
-              -4,
-              0.01,
-              50000
+                -scale,
+                scale,
+                scale,
+                -4,
+                0.01,
+                50000
             )
-        
+
             // const camera = new THREE.OrthographicCamera(
             //   -0.5,
             //   0.5,
