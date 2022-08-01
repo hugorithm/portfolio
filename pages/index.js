@@ -69,11 +69,11 @@ const Page = () => {
             </Section>
             <Section delay={0.1}>
                 <Box align="center" my={4}>
-                    <NextLink href="/curriculum" passHref>
-                        <Button ml={5} colorScheme="teal"><IoDocumentText/>&nbsp; My CV</Button>
+                    <NextLink href="/documents/CV.pdf" passHref>
+                        <Button ml={5} colorScheme="teal"><IoDocumentText />&nbsp; My CV</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
-                        <Button ml={5} colorScheme="teal"><MdEmail/>&nbsp; Email me!</Button>
+                        <Button ml={5} colorScheme="teal"><MdEmail />&nbsp; Email me!</Button>
                     </NextLink>
                 </Box>
             </Section>

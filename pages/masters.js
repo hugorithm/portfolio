@@ -1,4 +1,4 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading, Link } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
@@ -16,6 +16,8 @@ const Masters = () => (
                         This is the result of a lot o work and commitment. 
                         This thesis comprehends every step, from the system design to the implementation of a Blockchain network.
                         Hopefully a great contribution to the scientific community 😊
+                        &nbsp;
+                        <Link href="/documents/Master_Thesis.pdf">Check it out here!</Link>
                     </Paragraph>
                 </Box>
                 <embed src="/documents/Master_Thesis.pdf" width="700" height="950"></embed>
