@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Navbar from "../navbar.js";
 import dynamic from 'next/dynamic';
-import { Container, Box, Divider } from "@chakra-ui/react";
+import { Container, Box } from "@chakra-ui/react";
 import GuitarLoader from '../guitar-model-loader';
 import Footer from "../footer.js";
 
