@@ -3,8 +3,7 @@ import {
     Badge,
     Link,
     List,
-    ListItem,
-    AspectRatio
+    ListItem
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, ProjectImage, Meta } from '../../components/project';
