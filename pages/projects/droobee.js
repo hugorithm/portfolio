@@ -6,10 +6,10 @@ import {
     ListItem,
     AspectRatio
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, ProjectImage, Meta } from '../../components/project'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { Title, ProjectImage, Meta } from '../../components/project';
+import P from '../../components/paragraph';
+import Layout from '../../components/layouts/article';
 
 const Work = () => (
     <Layout title="Droobee">
@@ -19,6 +19,9 @@ const Work = () => (
             </Title>
             <P>
                 A Music Bot for Discord, that supports queues, playlists and multiple Guilds!
+                This project started from the necessity of having a dedicated music bot for discord.
+                Many bots didn't have the functionality and speed desired, so I saw the opportunity to create a bot 
+                that not only is fast, but offers many functionalities for everyone to enjoy.
             </P>
             <List ml={4} my={4}>
                 <ListItem>
