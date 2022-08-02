@@ -1,9 +1,9 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { WorkGridItem } from '../components/grid-item';
 
-import droobee from '../public/images/projects/droobee.png'
+import droobee from '../public/images/projects/droobee.png';
 
 
 const Projects = () => (
@@ -25,4 +25,4 @@ const Projects = () => (
 )
 
 export default Projects
-export { getServerSideProps } from '../components/chakra'
+export { getServerSideProps } from '../components/chakra';
