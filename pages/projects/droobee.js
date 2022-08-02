@@ -35,7 +35,7 @@ const Work = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>NodeJS, TypeScript, DiscordAPI, Discord.js</span>
+                    <span>NodeJS / TypeScript / DiscordAPI / Discord.js</span>
                 </ListItem>
             </List>
             <ProjectImage src="/images/projects/droobee.png" alt="Droobee" />
