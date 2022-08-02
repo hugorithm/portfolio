@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { loadGLTFModel } from '../libs/model'
-import { GuitarSpinner, GuitarContainer } from './guitar-model-loader'
+import { useState, useEffect, useRef, useCallback } from 'react';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { loadGLTFModel } from '../libs/model';
+import { GuitarSpinner, GuitarContainer } from './guitar-model-loader';
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -54,7 +54,6 @@ const GuitarModel = () => {
             // 640 -> 240
             // 8   -> 6
 
-
             const scale = scH * 0.004;
             const camera = new THREE.OrthographicCamera(
                 -scale,
@@ -64,24 +63,6 @@ const GuitarModel = () => {
                 0.01,
                 50000
             )
-
-            // const camera = new THREE.OrthographicCamera(
-            //   -0.5,
-            //   0.5,
-            //   0.5,
-            //   -1.5,
-            //   -50,
-            //   50
-            // )
-
-            // const camera = new THREE.OrthographicCamera(
-            //     -300,
-            //     300,
-            //     300,
-            //     -500,
-            //     -100000,
-            //     1000000
-            // )
 
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
