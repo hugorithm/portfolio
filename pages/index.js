@@ -6,7 +6,7 @@ import {
     useColorModeValue,
     Link,
     Button,
-    Text
+    Textgit
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -63,7 +63,7 @@ const Page = () => {
                     I like to learn and evolve with the projects I participate in while still adding value to the
                     final product and watching the evolution of a prototype, from its initial development phases to a
                     final solution. I'm very attentive to the new tendencies and innovations in technology. When offline, I love to play
-                    piano and electric guitar 😁.
+                    piano and electric guitar 😁
                 </Paragraph>
             </Section>
             <Section delay={0.1}>
