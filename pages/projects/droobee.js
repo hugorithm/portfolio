@@ -10,7 +10,7 @@ import { Title, ProjectImage, Meta } from '../../components/project';
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
 
-const Work = () => (
+const Project = () => (
     <Layout title="Droobee">
         <Container maxW="auto">
             <Title>
@@ -31,11 +31,11 @@ const Work = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Platform</Meta>
-                    <span>Windows / macOS / Linux / iOS / Android</span>
+                    <span>• Windows • macOS • Linux • iOS • Android •</span>
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>NodeJS / TypeScript / DiscordAPI / Discord.js</span>
+                    <span>• NodeJS • TypeScript • DiscordAPI • Discord.js •</span>
                 </ListItem>
             </List>
             <ProjectImage src="/images/projects/droobee.png" alt="Droobee" />
@@ -43,5 +43,5 @@ const Work = () => (
     </Layout>
 )
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+export default Project
+export { getServerSideProps } from '../../components/chakra';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

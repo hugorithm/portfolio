@@ -21,7 +21,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
     <Box w="100%" textAlign="center">
         <NextLink href={`/projects/${id}`} passHref scroll={false}>
             <LinkBox cursor="pointer">
