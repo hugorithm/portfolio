@@ -63,6 +63,7 @@ body.chakra-ui-light::-webkit-scrollbar-thumb, -moz-scrollbar-thumb {
 }
 
 body.chakra-ui-dark::-webkit-scrollbar-track, -moz-scrollbar-track {
+    box-shadow:  inset 2 2 6px rgba(0,0,0,.3);  
     -webkit-box-shadow: inset 2 2 6px rgba(0,0,0,.3);
     border-radius: 1px;
     background-color: #1a202c;
@@ -70,7 +71,8 @@ body.chakra-ui-dark::-webkit-scrollbar-track, -moz-scrollbar-track {
 }
 
 body.chakra-ui-light::-webkit-scrollbar-track, -moz-scrollbar-track {
-    -webkit-box-shadow: inset 2 2 6px rgba(0,0,0,.3);
+    box-shadow:  inset 2 2 6px rgba(0,0,0,.3);
+    -webkit-box-shadow:  inset 2 2 6px rgba(0,0,0,.3);
     border-radius: 1px;
     background-color: #dee4e7;
     cursor: pointer;
