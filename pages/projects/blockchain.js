@@ -30,7 +30,7 @@ const Project = () => (
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Website</Meta>
-                    <Link href="https://github.com/hugorithm/Healthcare-tracking-blockchain">
+                    <Link href="https://github.com/hugorithm/healthcare-tracking-blockchain">
                         https://github.com/hugorithm/Healthcare-tracking-blockchain <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
