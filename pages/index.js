@@ -6,7 +6,7 @@ import {
     useColorModeValue,
     Link,
     Button,
-    Textgit
+    Text
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
