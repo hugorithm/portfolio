@@ -26,7 +26,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             <Link
                 p={2}
                 bg={active ? 'grassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                color={active ? '#3d7aed' : inactiveColor}
                 target={target}
                 {...props}
             >
@@ -45,7 +45,7 @@ const Navbar = props => {
             as="nav"
             w="100%"
             bg={useColorModeValue('#ffffff40', '#252d3e80')}
-            style={{ backdropFilter: 'blur(10px' }}
+            style={{ backdropFilter: 'blur(10px)' }}
             zIndex={1}
             {...props}
         >

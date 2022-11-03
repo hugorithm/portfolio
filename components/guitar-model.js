@@ -74,15 +74,15 @@ const GuitarModel = () => {
             controls.target = target
             setControls(controls)
 
-            setTimeout(()=> {
-                loadGLTFModel(scene, '/laptop.glb', {
-                    receiveShadow: false,
-                    castShadow: true
-                }).then(() => {
-                    animate();
-                    setLoading(false);
-                });
-            }, 3000);
+        
+            loadGLTFModel(scene, '/laptop.glb', {
+                receiveShadow: false,
+                castShadow: true
+            }).then(() => {
+                animate();
+                setLoading(false);
+            });
+           
 
             let req = null
             let frame = 0
