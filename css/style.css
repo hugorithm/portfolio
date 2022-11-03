@@ -78,7 +78,12 @@ body.chakra-ui-light::-webkit-scrollbar-track, -moz-scrollbar-track {
     cursor: pointer;
 }
 
-.terminal {
-  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  opacity: 1;
+.profile-pic:hover {
+  transform: translate(5px, 5px);
+  filter: none;
+  mix-blend-mode: unset;
+}
+
+.profile-pic {
+  transition: all 0.3s ease-in-out;
 }

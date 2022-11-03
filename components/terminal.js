@@ -13,7 +13,7 @@ const Terminal = () => {
 
     setTimeout(()=>{
         onOpen();
-    }, 5000)
+    }, 4000)
 
     return (
         <>

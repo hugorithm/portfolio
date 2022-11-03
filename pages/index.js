@@ -49,7 +49,7 @@ const Page = () => {
                         height={200}
                         borderRadius={3}
                     >
-                        <Image
+                        <Image className="profile-pic"
                         transform={"translate(12px, 12px)"}
                         maxWidth="200px"
                         display="inline-block"
