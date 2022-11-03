@@ -5,7 +5,7 @@ const Footer = () => {
         <Container maxW={"60vh"}>
             <Divider my={6} />
             <Box align="center" opacity={0.4} fontSize="sm">
-                &copy; {new Date().getFullYear()} Hugo Silva. All Rights Reserved.
+                &copy; {new Date().getFullYear()} Hugo Silva.
             </Box>
         </Container>
 

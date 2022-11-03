@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from 'next/link';
 import {
     Box,
     Heading,
@@ -6,8 +6,8 @@ import {
     Container,
     Divider,
     Button
-} from '@chakra-ui/react'
-import { ImHome } from 'react-icons/im'
+} from '@chakra-ui/react';
+import { ImHome } from 'react-icons/im';
 
 const NotFound = () => {
     return (

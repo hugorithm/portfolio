@@ -12,61 +12,73 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
-import { MdEmail } from 'react-icons/md';
-import { IoDocumentText } from 'react-icons/io5';
+import { MdEmail } from "react-icons/md";
+import { IoDocumentText } from "react-icons/io5";
 
 
 const Page = () => {
     return (
         <Container maxW='auto'>
-            <Box style={{ backdropFilter: 'blur(10px' }} borderRadius="lg" bg={useColorModeValue('whiteAlpha.200', 'whiteAlpha.200')} p={3} mb={6} mt={3} overflow={"hidden"} align="left" border={useColorModeValue('1px solid ', '1px solid #fff')}>
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.200', 'whiteAlpha.200')} 
+            p={3} mb={6} mt={3} overflow={"hidden"} align="left" boxShadow={"8px 11px 10px 0px #131820"} border={useColorModeValue('1px solid ', '1px solid #fff')}>
                 <Text color={useColorModeValue('#3d7aed', '#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
                 {/* <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text> */}
-                <Text className="typewriter">sudo ./load-3dmodel.sh -i -p 500</Text>
+                <Text className="typewriter">./load-3dmodel.sh -i -p 500</Text>
             </Box>
+            <Section delay={0.1}>
+                <Box display={{ md: 'flex' }} >
+                    <Box flexGrow={1}>
+                        <Text mb={3} mt={6} fontFamily={"'Fira Code', monospace"} color={useColorModeValue('#3d7aed', '#57e296')}>Hi, my name is</Text>
+                        <Heading as="h2" mb={3} fontSize={70} variant="page-title" display="flex" gap={2}>
+                            Hugo
+                            <Text color={useColorModeValue('#3d7aed', '#57e296')} w="auto">
+                                Silva
+                            </Text>
 
-            <Box display={{ md: 'flex' }}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title" display="flex" gap={2}>
-                        Hugo
-                        <Text color={useColorModeValue('#3d7aed', '#57e296')} w="auto">
-                            Silva
-                        </Text>
-
-                    </Heading>
-                    <Text fontFamily={"'Fira Code', monospace"}>Software Engineer 💻</Text>
-                </Box>
-                <Box
-                    flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    align="center"
-                >
-                    <Image
+                        </Heading>
+                        <Heading as="h2" fontSize={30} variant="page-title" display="flex" gap={2}>
+                            I'm a Software Engineer.
+                        </Heading>
+                    </Box>
+                    <Box
+                        flexShrink={0}
+                        mt={{ base: 4, md: 6 }}
+                        ml={{ md: 6 }}
+                        mr={{md: 4 }}
+                        align="center"
                         borderColor="whiteAlpha.800"
                         borderWidth={2}
                         borderStyle="solid"
-                        maxWidth="100px"
+                        width={200}
+                        height={200}
+                        borderRadius={3}
+                    >
+                        <Image
+                        transform={"translate(12px, 12px)"}
+                        maxWidth="200px"
                         display="inline-block"
-                        borderRadius="full"
+                        borderRadius={3}
                         src="/images/hugo.jpg"
                         alt="Profile Image"
+                        filter={"grayscale(1)"}
+                        mixBlendMode={"luminosity"}
                     />
                 </Box>
-            </Box>
-            <Section delay={0.1}>
+                </Box>
+            </Section>
+            <Section delay={0.2}>
                 <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Biography
                 </Heading>
                 <Paragraph>
                     Hi, I'm Hugo! I'm a Software Engineer from Portugal with a passion for technology.
-                    I like to learn and evolve with the projects I participate in while still adding value to the
-                    final product and watching the evolution of a prototype, from its initial development phases to a
-                    final solution. I'm very attentive to the new tendencies and innovations in technology. When offline, I love to play
+                </Paragraph>
+                <Paragraph>
+                    I love learning new things and evolving with the projects I participate in. I'm very attentive to the new tendencies and innovations in technology. When offline, I love to play
                     piano and electric guitar 😁
                 </Paragraph>
             </Section>
-            <Section delay={0.1}>
+            <Section delay={0.3}>
                 <Box align="center" my={4}>
                     <NextLink href="/documents/CV.pdf" passHref>
                         <Button ml={5} colorScheme="teal"><IoDocumentText />&nbsp; My CV</Button>
@@ -76,7 +88,7 @@ const Page = () => {
                     </NextLink>
                 </Box>
             </Section>
-            <Section delay={0.1}>
+            <Section delay={0.4}>
                 <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Experience & Events
                 </Heading>
@@ -101,7 +113,7 @@ const Page = () => {
                     at University of Minho with a grade of 19 out of 20
                 </BioSection>
             </Section>
-            <Section delay={0.1}>
+            <Section delay={0.5}>
                 <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
                     Things I ❤
                 </Heading>
