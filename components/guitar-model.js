@@ -13,7 +13,7 @@ const GuitarModel = () => {
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
-    const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
+    const [target] = useState(new THREE.Vector3(0, 0.5, 0))
     const [initialCameraPosition] = useState(
         new THREE.Vector3(
             20 * Math.sin(0.2 * Math.PI),
@@ -44,25 +44,23 @@ const GuitarModel = () => {
             const renderer = new THREE.WebGLRenderer({
                 antialias: true,
                 alpha: true
-            })
+            });
+
             renderer.setPixelRatio(window.devicePixelRatio)
             renderer.setSize(scW, scH)
             renderer.outputEncoding = THREE.sRGBEncoding
             container.appendChild(renderer.domElement)
             setRenderer(renderer)
-
-            // 640 -> 240
-            // 8   -> 6
-
-            const scale = scH * 0.004;
+        
+            const scale = scH * 0.005 + 0.5;
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
                 scale,
-                -4,
+                -scale,
                 0.01,
-                50000
-            )
+                1000
+            );
 
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
@@ -94,12 +92,9 @@ const GuitarModel = () => {
                 if (frame <= 100) {
                     const p = initialCameraPosition
                     const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
-
                     camera.position.y = 10
-                    camera.position.x =
-                        p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-                    camera.position.z =
-                        p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
+                    camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
+                    camera.position.z = p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed);
                     camera.lookAt(target)
                 } else {
                     controls.update()
@@ -109,7 +104,6 @@ const GuitarModel = () => {
             }
 
             return () => {
-                console.log('unmount')
                 cancelAnimationFrame(req)
                 renderer.dispose()
             }
