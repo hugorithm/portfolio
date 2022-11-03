@@ -98,14 +98,14 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Started working on his Master&apos;s Dissertation &nbsp;
+                    Started working on my Master&apos;s Dissertation &nbsp;
                     <NextLink href="/masters" passHref>
                         <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
                     </NextLink>
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
-                    Completed his Master&apos;s in Engineering and Management of Information Systems
+                    Completed my Master&apos;s in Engineering and Management of Information Systems
                     at University of Minho with a grade of 19 out of 20
                 </BioSection>
             </Section>
