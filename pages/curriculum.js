@@ -17,5 +17,5 @@ const Curriculum = () => (
     </Layout>
 )
 
-export default Curriculum
-export { getServerSideProps } from '../components/chakra'
+export default Curriculum;
+export { getServerSideProps } from '../components/chakra';

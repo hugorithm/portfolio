@@ -20,7 +20,6 @@ const Masters = () => (
                         <Link href="/documents/Master_Thesis.pdf">Check it out here!</Link>
                     </Paragraph>
                 </Box>
-                <embed src="/documents/Master_Thesis.pdf" width="700" height="950"></embed>
             </Section>
         </Container>
     </Layout>

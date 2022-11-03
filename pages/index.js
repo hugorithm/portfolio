@@ -14,22 +14,18 @@ import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
+import Terminal from "../components/terminal";
 
 
 const Page = () => {
     return (
         <Container maxW='auto'>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.200', 'whiteAlpha.200')} 
-            p={3} mb={6} mt={3} overflow={"hidden"} align="left" boxShadow={"8px 11px 10px 0px #131820"} border={useColorModeValue('1px solid ', '1px solid #fff')}>
-                <Text color={useColorModeValue('#3d7aed', '#57e296')} fontFamily={"'Fira Code', monospace"} letterSpacing=".15rem" fontSize={13}>hugorithm:~$ </Text>
-                {/* <Text className="typewriter">Hello! I&apos;m a Software Engineer from Portugal with a passion for technology!</Text> */}
-                <Text className="typewriter">./load-3dmodel.sh -i -p 500</Text>
-            </Box>
+           <Terminal></Terminal>
             <Section delay={0.1}>
                 <Box display={{ md: 'flex' }} >
                     <Box flexGrow={1}>
-                        <Text mb={3} mt={6} fontFamily={"'Fira Code', monospace"} color={useColorModeValue('#3d7aed', '#57e296')}>Hi, my name is</Text>
-                        <Heading as="h2" mb={3} fontSize={70} variant="page-title" display="flex" gap={2}>
+                        <Text mb={3} mt={6} fontFamily={"'Fira Code', monospace"} color={useColorModeValue('#3d7aed', '#57e296')} fontSize={17} fontWeight={800}>Hi, my name is</Text>
+                        <Heading as="h2" mb={3} fontSize={65} variant="page-title" display="flex" gap={2}>
                             Hugo
                             <Text color={useColorModeValue('#3d7aed', '#57e296')} w="auto">
                                 Silva
@@ -46,7 +42,7 @@ const Page = () => {
                         ml={{ md: 6 }}
                         mr={{md: 4 }}
                         align="center"
-                        borderColor="whiteAlpha.800"
+                        borderColor={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}
                         borderWidth={2}
                         borderStyle="solid"
                         width={200}
@@ -68,7 +64,7 @@ const Page = () => {
             </Section>
             <Section delay={0.2}>
                 <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
-                    Biography
+                    About Me
                 </Heading>
                 <Paragraph>
                     Hi, I'm Hugo! I'm a Software Engineer from Portugal with a passion for technology.
@@ -81,10 +77,10 @@ const Page = () => {
             <Section delay={0.3}>
                 <Box align="center" my={4}>
                     <NextLink href="/documents/CV.pdf" passHref>
-                        <Button ml={5} colorScheme="teal"><IoDocumentText />&nbsp; My CV</Button>
+                        <Button borderWidth={1} borderColor={useColorModeValue("#3d7aed", "#57e296")}><IoDocumentText />&nbsp; My CV</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
-                        <Button ml={5} colorScheme="teal"><MdEmail />&nbsp; Email me!</Button>
+                        <Button ml={5} borderWidth={1}  borderColor={useColorModeValue("#3d7aed", "#57e296")}><MdEmail />&nbsp; Email me!</Button>
                     </NextLink>
                 </Box>
             </Section>

@@ -9,48 +9,48 @@ function easeOutCirc(x) {
 }
 
 const GuitarModel = () => {
-    const refContainer = useRef()
-    const [loading, setLoading] = useState(true)
-    const [renderer, setRenderer] = useState()
-    const [_camera, setCamera] = useState()
-    const [target] = useState(new THREE.Vector3(0, 0.5, 0))
+    const refContainer = useRef();
+    const [loading, setLoading] = useState(true);
+    const [renderer, setRenderer] = useState();
+    const [_camera, setCamera] = useState();
+    const [target] = useState(new THREE.Vector3(0, 0.5, 0));
     const [initialCameraPosition] = useState(
         new THREE.Vector3(
             20 * Math.sin(0.2 * Math.PI),
             10,
             20 * Math.cos(0.2 * Math.PI)
         )
-    )
-    const [scene] = useState(new THREE.Scene())
-    const [_controls, setControls] = useState()
+    );
+    const [scene] = useState(new THREE.Scene());
+    const [_controls, setControls] = useState();
 
     const handleWindowResize = useCallback(() => {
         const { current: container } = refContainer
         if (container && renderer) {
-            const scW = container.clientWidth
-            const scH = container.clientHeight
+            const scW = container.clientWidth;
+            const scH = container.clientHeight;
 
-            renderer.setSize(scW, scH)
+            renderer.setSize(scW, scH);
         }
-    }, [renderer])
+    }, [renderer]);
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
-        const { current: container } = refContainer
+        const { current: container } = refContainer;
         if (container && !renderer) {
-            const scW = container.clientWidth
-            const scH = container.clientHeight
+            const scW = container.clientWidth;
+            const scH = container.clientHeight;
 
             const renderer = new THREE.WebGLRenderer({
                 antialias: true,
                 alpha: true
             });
 
-            renderer.setPixelRatio(window.devicePixelRatio)
-            renderer.setSize(scW, scH)
-            renderer.outputEncoding = THREE.sRGBEncoding
-            container.appendChild(renderer.domElement)
-            setRenderer(renderer)
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(scW, scH);
+            renderer.outputEncoding = THREE.sRGBEncoding;
+            container.appendChild(renderer.domElement);
+            setRenderer(renderer);
         
             const scale = scH * 0.005 + 0.5;
             const camera = new THREE.OrthographicCamera(
@@ -62,25 +62,27 @@ const GuitarModel = () => {
                 1000
             );
 
-            camera.position.copy(initialCameraPosition)
-            camera.lookAt(target)
-            setCamera(camera)
+            camera.position.copy(initialCameraPosition);
+            camera.lookAt(target);
+            setCamera(camera);
 
-            const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-            scene.add(ambientLight)
+            const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
+            scene.add(ambientLight);
 
             const controls = new OrbitControls(camera, renderer.domElement)
             controls.autoRotate = true
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/laptop.glb', {
-                receiveShadow: false,
-                castShadow: false
-            }).then(() => {
-                animate()
-                setLoading(false)
-            })
+            setTimeout(()=> {
+                loadGLTFModel(scene, '/laptop.glb', {
+                    receiveShadow: false,
+                    castShadow: true
+                }).then(() => {
+                    animate();
+                    setLoading(false);
+                });
+            }, 3000);
 
             let req = null
             let frame = 0
