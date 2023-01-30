@@ -114,7 +114,7 @@ const Navbar = props => {
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="/documents/CV.pdf" passHref>
+                                <NextLink href="https://github.com/hugorithm/cv/blob/master/HugoSilva_CV.pdf" passHref>
                                     <MenuItem as={Link}>Curriculum Vitae</MenuItem>
                                 </NextLink>
                                 <NextLink href="/masters" passHref>
