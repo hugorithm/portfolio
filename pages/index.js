@@ -76,7 +76,7 @@ const Page = () => {
             </Section>
             <Section delay={0.3}>
                 <Box align="center" my={4}>
-                    <NextLink href="/documents/CV.pdf" passHref>
+                    <NextLink href="https://github.com/hugorithm/cv/blob/master/HugoSilva_CV.pdf" passHref>
                         <Button borderWidth={1} borderColor={useColorModeValue("#3d7aed", "#57e296")}><IoDocumentText />&nbsp; My CV</Button>
                     </NextLink>
                     <NextLink href="mailto:hugofsilv@gmail.com" passHref>
