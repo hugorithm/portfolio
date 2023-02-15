@@ -102,6 +102,10 @@ const Page = () => {
                     <NextLink href="/masters" passHref>
                         <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
                     </NextLink>
+                    Published the Article &nbsp;
+                    <NextLink href="https://doi.org/10.1016/j.procs.2020.03.073" passHref>
+                        <Link><strong>"Modular Blockchain Implementation in Intensive Medicine"</strong></Link>
+                    </NextLink>
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
