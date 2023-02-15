@@ -98,12 +98,12 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Started working on my Master&apos;s Dissertation 
+                    Started working on my Master&apos;s Dissertation&nbsp; 
                     <NextLink href="/masters" passHref>
                         <Link><strong>"Management and Analysis Platform for Data Based in Blockchain Technology"</strong></Link>
                     </NextLink>
                     <br></br>
-                    Published the Article 
+                    Published the Article&nbsp; 
                     <NextLink href="https://doi.org/10.1016/j.procs.2020.03.073" passHref>
                         <Link><strong>"Modular Blockchain Implementation in Intensive Medicine"</strong></Link>
                     </NextLink>
