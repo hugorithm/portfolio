@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import Logo from "./logo";
 import NextLink from "next/link";
 import {
@@ -22,19 +23,24 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href} passHref scroll={false}>
-            <Link
-                p={2}
-                bg={active ? 'grassTeal' : undefined}
-                color={active ? '#3d7aed' : inactiveColor}
-                target={target}
-                {...props}
-            >
-                {children}
-            </Link>
-        </NextLink>
+        <Link
+            as={NextLink}
+            href={href}
+            scroll={false}
+            p={2}
+            bg={active ? 'grassTeal' : undefined}
+            color={active ? '#3d7aed' : inactiveColor}
+            target={target}
+            {...props}
+        >
+            {children}
+        </Link>
     )
 }
+
+const MenuLink = forwardRef((props, ref) => (
+    <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
     const { path } = props;
@@ -111,29 +117,21 @@ const Navbar = props => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="https://github.com/hugorithm/cv/blob/master/HugoSilva_CV.pdf" passHref>
-                                    <MenuItem as={Link}>Curriculum Vitae</MenuItem>
-                                </NextLink>
-                                <NextLink href="/masters" passHref>
-                                    <MenuItem as={Link}>Master&apos;s Thesis</MenuItem>
-                                </NextLink>
-                                <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link}>Projects</MenuItem>
-                                </NextLink>
-                                <MenuItem as={Link} href="https://github.com/hugorithm">
+                                <MenuItem as={MenuLink} href="/">About</MenuItem>
+                                <MenuItem as={MenuLink} href="https://github.com/hugorithm/cv/blob/master/cv.pdf">Curriculum Vitae</MenuItem>
+                                <MenuItem as={MenuLink} href="/masters">Master&apos;s Thesis</MenuItem>
+                                <MenuItem as={MenuLink} href="/projects">Projects</MenuItem>
+                                <MenuItem as={MenuLink} href="https://github.com/hugorithm">
                                     <IoLogoGithub />
                                     &nbsp;
                                     GitHub
                                 </MenuItem>
-                                <MenuItem as={Link} href="https://instagram.com/huqoferreira">
+                                <MenuItem as={MenuLink} href="https://instagram.com/huqoferreira">
                                     <IoLogoInstagram />
                                     &nbsp;
                                     Intagram
                                 </MenuItem>
-                                <MenuItem as={Link} href="https://www.linkedin.com/in/hugoandrefsilva">
+                                <MenuItem as={MenuLink} href="https://www.linkedin.com/in/hugoandrefsilva">
                                     <IoLogoLinkedin />
                                     &nbsp;
                                     LinkedIn

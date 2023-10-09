@@ -1,12 +1,13 @@
 import {
-    Container,
-    Box,
-    Heading,
-    Image,
-    useColorModeValue,
-    Link,
-    Button,
-    Text
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+  Link,
+  Button,
+  Text,
+  chakra
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";

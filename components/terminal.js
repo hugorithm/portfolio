@@ -1,5 +1,4 @@
 import {
-    Slide,
     ScaleFade,
     Container,
     Box,
@@ -9,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 
 const Terminal = () => {
-    const { isOpen, onClose, onOpen } = useDisclosure();
+    const { isOpen, onOpen } = useDisclosure();
 
     setTimeout(()=>{
         onOpen();
