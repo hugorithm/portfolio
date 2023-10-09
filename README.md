@@ -1,5 +1,5 @@
 # My Website
-![Hugo Silva](./public/images/website_hugo.png)
+![Hugo Silva](./public/images/website_hugo.gif)
 
 This is my personal Portfolio [Website](https://hsilva.vercel.app/)!!
 
