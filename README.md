@@ -5,7 +5,6 @@ This is my personal Portfolio [Website](https://hsilva.vercel.app/)!!
 
 ## Stack
 <p align="center">
-    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"/>
     <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white"/>
     <img alt="Chakra UI" src="https://img.shields.io/badge/Chakra_UI-319795?style=flat&logo=chakra-ui&logoColor=white"/>
     <img alt="Three.js" src="https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white"/>
