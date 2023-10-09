@@ -23,7 +23,7 @@ const Main = ({ children, router }) => {
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <meta name="twitter:title" content="Hugo Silva" />
                 <meta property="og:site_name" content="Hugo Silva" />
-                <meta name="og:title" content="Hugo SIlva" />
+                <meta name="og:title" content="Hugo Silva" />
                 <meta property="og:type" content="website" />
                 <title>Hugo Silva</title>
             </Head>
