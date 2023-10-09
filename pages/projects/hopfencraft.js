@@ -17,11 +17,16 @@ const Project = () => (
                 HopfenCraft <Badge>2023</Badge>
             </Title>
             <P>
-            A Beer E-commerce shop made in Java Spring Boot and React + Redux with Typescript and MaterialUI.
+            This project was so much fun to make 😁!
+            I started this project to both learn and showcase my skills in the Java stack, as well as, React.
+            I was curious about the Spring Framework and decided to give it a go. As it turns out I really liked it.
+            As for the frontend, I wanted to relearn React as it is a very <em>&quote;javascripty&quote;</em> functional oriented framework. 
+            I&apos;m really happy with how it turned out, and as a result, this is a project which I&apos;m really proud of!
+            Please feel free to fork the project and contribute!
             </P>
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta>Website</Meta>
+                    <Meta>GitHub</Meta>
                     <Link href="https://github.com/hugorithm/HopfenCraft">
                         https://github.com/hugorithm/HopfenCraft <ExternalLinkIcon mx="2px" />
                     </Link>
@@ -32,7 +37,7 @@ const Project = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>• Java • Spring Boot • PostgreSQL • React • Redux • Typescript • Paypal API • OAuth2 • Google reCAPTCHA • MaterialUI •</span>
+                    <span>• Java • Spring Boot • PostgreSQL • React.js • Redux • Typescript • Paypal API v2 • OAuth2 • Google reCAPTCHA • MaterialUI • Docker • Prometheus • Grafana •</span>
                 </ListItem>
             </List>
             <ProjectImage src="/images/projects/hopfencraft.gif" alt="Droobee" />

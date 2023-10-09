@@ -17,26 +17,26 @@ const Project = () => (
                 Blockchain Solution for Healthcare Data Tracking <Badge>2020</Badge>
             </Title>
             <P>
-                This is the project that I chose for my Master&apos;s Dissertation.
-                It is a Blockchain Network based on Hyperledger Fabric that is used to track Healthcare patient data through various beacons.
-                It integrates a Web API in Node.js for asset creation, modification and has support for asset querying, as well as,
+                My Master&apos;s Dissertation project.
+                It is a Blockchain Network based on Hyperledger Fabric. It tracks Healthcare patient data through beacons.
+                It integrates a Web API in Node.js for asset creation/modification and has support for asset querying, as well as,
                 various Blockchain monitoring software: Blockchain Explorer, Hyperledger Caliper, Prometheus and Grafana.
-                It started at the Hospital of S. João in Oporto, where there were clear issues regarding data immutability and veracity.
+                The project kicked off at the Hospital of S. João in Oporto, where there were clear issues regarding data immutability and veracity.
                 This project uses Blockchain Technology to ensure a tamper-proof, immutable, controlled, and secured way of storing
                 data in order to achieve healthcare data veracity, privacy, and reliability.
-                You can check how I built this <Link href="/documents/Master_Thesis.pdf">here!</Link>
+                You can check how I developed this <Link href="/documents/Master_Thesis.pdf">here!</Link>
 
             </P>
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta>Website</Meta>
+                    <Meta>GitHub</Meta>
                     <Link href="https://github.com/hugorithm/Healthcare-tracking-blockchain">
                         https://github.com/hugorithm/Healthcare-tracking-blockchain <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
                 <ListItem>
                     <Meta>Platform</Meta>
-                    <span>• Linux • macOS • Windows •</span>
+                    <span>• Linux •</span>
                 </ListItem>
                 <ListItem>
                     <Meta>Stack</Meta>

@@ -24,7 +24,7 @@ const Project = () => (
             </P>
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta>Website</Meta>
+                    <Meta>GitHub</Meta>
                     <Link href="https://github.com/hugorithm/Droobee">
                         https://github.com/hugorithm/Droobee <ExternalLinkIcon mx="2px" />
                     </Link>
