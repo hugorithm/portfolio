@@ -78,7 +78,7 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
-                    <LinkItem href="https://github.com/hugorithm/cv/blob/master/HugoSilva_CV.pdf" path={path}>
+                    <LinkItem href="https://github.com/hugorithm/cv/blob/master/cv.pdf" path={path}>
                         Curriculum Vitae
                     </LinkItem>
                     <LinkItem href="/masters" path={path}>
