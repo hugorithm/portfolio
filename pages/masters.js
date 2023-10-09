@@ -8,7 +8,7 @@ const Masters = () => (
     <Layout title="Master&apos;s Thesis">
         <Container maxW='auto'>
             <Heading as="h3" fontSize={20} mb={4}>
-                "Management and Analysis Platform for Data Based in Blockchain Technology"
+            &quot;Management and Analysis Platform for Data Based in Blockchain Technology&quot;
             </Heading>
             <Section>
                 <Box lign="center" my={4}>

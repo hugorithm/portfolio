@@ -17,7 +17,7 @@ const Project = () => (
                 Blockchain Solution for Healthcare Data Tracking <Badge>2020</Badge>
             </Title>
             <P>
-                This is the project that I chose for my Master's Dissertation.
+                This is the project that I chose for my Master&apos;s Dissertation.
                 It is a Blockchain Network based on Hyperledger Fabric that is used to track Healthcare patient data through various beacons.
                 It integrates a Web API in Node.js for asset creation, modification and has support for asset querying, as well as,
                 various Blockchain monitoring software: Blockchain Explorer, Hyperledger Caliper, Prometheus and Grafana.

@@ -19,7 +19,7 @@ const Project = () => (
             <P>
                 A Music Bot for Discord, that supports queues, playlists and multiple Guilds!
                 This project started from the necessity of having a dedicated music bot for discord.
-                Many bots didn't have the functionality and speed desired, so I saw the opportunity to create a bot 
+                Many bots didn&apos;t have the functionality and speed desired, so I saw the opportunity to create a bot 
                 that not only is fast, but offers many functionalities for everyone to enjoy.
             </P>
             <List ml={4} my={4}>
