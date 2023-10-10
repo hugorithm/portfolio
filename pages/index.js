@@ -95,8 +95,8 @@ const Page = () => {
           Born in Braga, Portugal.
         </BioSection>
         <BioSection>
-          <BioYear>2005 to 2012</BioYear>
-          English C1 certification at the British Institute in Braga
+          <BioYear>2014</BioYear>
+          English C1+ certification at the British Institute in Braga
         </BioSection>
         <BioSection>
           <BioYear>2019 to Present</BioYear>
