@@ -18,23 +18,23 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-    // const hsLogo = `/images/terminal${useColorModeValue('', '-dark')}.png`;
-    const hsLogo = `/images/terminal.png`;
-    return (
-        <Link href="/">
-            <LogoBox>
-                <Image src={hsLogo} width={20} height={20} alt="logo"></Image>
-                <Text
-                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                    fontFamily='M PLUS Rounded 1c'
-                    fontWeight='bold'
-                    ml={3}
-                >
-                    Hugo Silva
-                </Text>
-            </LogoBox>
-        </Link>
-    );
+  // const hsLogo = `/images/terminal${useColorModeValue('', '-dark')}.png`;
+  const hsLogo = `/images/terminal.png`;
+  return (
+    <Link href="/">
+      <LogoBox>
+        <Image src={hsLogo} width={20} height={20} alt="logo"></Image>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c'
+          fontWeight='bold'
+          ml={3}
+        >
+          Hugo Silva
+        </Text>
+      </LogoBox>
+    </Link>
+  );
 }
 
 export default Logo;
