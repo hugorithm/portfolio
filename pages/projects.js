@@ -18,7 +18,7 @@ const Projects = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <ProjectGridItem id="hopfencraft" title="HopfenCraft" thumbnail={hopfencraft}>
-            A Beer E-commerce shop made in Java Spring Boot and React + Redux with Typescript and MaterialUI!
+            A Beer E-commerce shop made in Java Spring Boot + PostgreSQL and React + Redux with Typescript and MaterialUI!
           </ProjectGridItem>
         </Section>
         <Section>
