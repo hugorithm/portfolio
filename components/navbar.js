@@ -21,7 +21,8 @@ import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
+  const activeLink = useColorModeValue('hyperBlue', 'hyperGreen');
   return (
     <Link
       as={NextLink}
@@ -29,7 +30,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       scroll={false}
       p={2}
       bg={active ? 'grassTeal' : undefined}
-      color={active ? useColorModeValue('hyperBlue', 'hyperGreen') : inactiveColor}
+      color={active ? activeLink : inactiveColor}
       target={target}
       {...props}
     >
