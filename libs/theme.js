@@ -95,7 +95,9 @@ const fonts = {
 }
 
 const colors = {
-  glassTeal: '#88ccca'
+  glassTeal: '#88ccca',
+  hyperGreen: '#57e296',
+  hyperBlue: '#3d7aed'
 }
 
 const config = {

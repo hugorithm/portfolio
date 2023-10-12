@@ -30,10 +30,10 @@ const Page = () => {
       <Section delay={0.1}>
         <Box display={{ md: 'flex' }} >
           <Box flexGrow={1}>
-            <Text mb={3} mt={6} fontFamily={"'Fira Code', monospace"} color={useColorModeValue('#3d7aed', '#57e296')} fontSize={17} fontWeight={800}>Hi, my name is</Text>
+            <Text mb={3} mt={6} fontFamily={"'Fira Code', monospace"} color={useColorModeValue('hyperBlue', 'hyperGreen')} fontSize={17} fontWeight={800}>Hi, my name is</Text>
             <Heading as="h2" mb={3} fontSize={65} variant="page-title" display="flex" gap={2}>
               Hugo
-              <Text color={useColorModeValue('#3d7aed', '#57e296')} w="auto">
+              <Text color={useColorModeValue('hyperBlue', 'hyperGreen')} w="auto">
                 Silva
               </Text>
 
@@ -69,7 +69,7 @@ const Page = () => {
         </Box>
       </Section>
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
+        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           About Me
         </Heading>
         <Paragraph>
@@ -82,12 +82,12 @@ const Page = () => {
       </Section>
       <Section delay={0.3}>
         <Box align="center" my={4}>
-          <Button as={NextLink} href="https://github.com/hugorithm/cv/blob/master/cv.pdf" borderWidth={1} borderColor={useColorModeValue("#3d7aed", "#57e296")}><IoDocumentText />&nbsp; My CV</Button>
-          <Button as={NextLink} href="mailto:hugofsilv@gmail.com" ml={5} borderWidth={1} borderColor={useColorModeValue("#3d7aed", "#57e296")}><MdEmail />&nbsp; Email me!</Button>
+          <Button as={NextLink} href="https://github.com/hugorithm/cv/blob/master/cv.pdf" borderWidth={1} borderColor={useColorModeValue("hyperBlue", "hyperGreen")}><IoDocumentText />&nbsp; My CV</Button>
+          <Button as={NextLink} href="mailto:hugofsilv@gmail.com" ml={5} borderWidth={1} borderColor={useColorModeValue("hyperBlue", "hyperGreen")}><MdEmail />&nbsp; Email me!</Button>
         </Box>
       </Section>
       <Section delay={0.4}>
-        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
+        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Experience & Events
         </Heading>
         <BioSection>
@@ -125,7 +125,7 @@ const Page = () => {
         </BioSection>
       </Section>
       <Section delay={0.5}>
-        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('#3d7aed', '#57e296')}>
+        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Things I ❤
         </Heading>
         <Paragraph>
