@@ -104,7 +104,7 @@ const Page = () => {
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Started working on my Master&apos;s Dissertation&nbsp;
+          Started working on my Master&apos;s Thesis&nbsp;
 
           <Link as={NextLink} href="/masters"><strong>&quot;Management and Analysis Platform for Data Based in Blockchain Technology&quot;</strong></Link>
 
