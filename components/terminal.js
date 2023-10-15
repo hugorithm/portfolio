@@ -35,7 +35,7 @@ const Terminal = () => {
           >
             <Text
               color={useColorModeValue('hyperBlue', 'hyperGreen')}
-              fontFamily={"'Fira Code', monospace"}
+              fontFamily={"'JetBrains Mono', monospace"}
               letterSpacing=".15rem"
               fontSize={13}
             >
