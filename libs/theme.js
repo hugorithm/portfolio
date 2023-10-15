@@ -7,7 +7,7 @@ const styles = {
       bg: mode('#c9deff', '#1a202c')(props)
     },
     "body.chakra-ui-dark p.typewriter": {
-      fontFamily: "Fira Code, monospace",
+      fontFamily: "JetBrains Mono, monospace",
       fontSize: "13px",
       overflow: "hidden",
       borderRight: "8px solid rgb(255, 255, 255)",
@@ -18,7 +18,7 @@ const styles = {
       animation: "typing 4.5s steps(60, end), blink-caret 1s step-end infinite",
     },
     "body.chakra-ui-light p.typewriter": {
-      fontFamily: "Fira Code, monospace",
+      fontFamily: "JetBrains Mono, monospace",
       fontSize: "13px",
       overflow: "hidden",
       borderRight: "8px solid rgb(53, 53, 53)",
