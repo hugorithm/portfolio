@@ -1,7 +1,7 @@
 # My Website
 ![Hugo Silva](./public/images/website_hugo.gif)
 
-[Website](https://hsilva.vercel.app/)
+[My portfolio](https://hsilva.vercel.app/)
 
 ## Stack
 <p align="center">
