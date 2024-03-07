@@ -1,5 +1,4 @@
 # My Website
-![Hugo Silva](./public/images/website_hugo.gif)
 
 [My website](https://hsilva.vercel.app/)
 
