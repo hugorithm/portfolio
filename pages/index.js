@@ -129,7 +129,7 @@ const Page = () => {
           Things I ❤
         </Heading>
         <Paragraph>
-          Software Engineering 💻, Electric Guitar 🎸🎶, Sports 🎾⚽, Photography 📷, Games 🎮
+          Software Engineering 💻, Piano &amp; Electric Guitar 🎸🎶, Sports 🎾⚽, Photography 📷
         </Paragraph>
       </Section>
     </Container>
