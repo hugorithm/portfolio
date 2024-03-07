@@ -97,7 +97,7 @@ const Navbar = props => {
             <IoLogoGithub />
           </LinkItem>
           <LinkItem
-            href="https://instagram.com/huqoferreira"
+            href="https://instagram.com/huqosilva"
             path={path}>
             <IoLogoInstagram />
           </LinkItem>
