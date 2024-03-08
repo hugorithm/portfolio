@@ -4,7 +4,7 @@ import { mode } from "@chakra-ui/theme-tools";
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#c9deff', '#1a202c')(props)
+      bg: mode('#ffffff', '#1a202c')(props)
     },
     "body.chakra-ui-dark p.typewriter": {
       fontFamily: "JetBrains Mono, monospace",
