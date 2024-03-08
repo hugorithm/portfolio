@@ -36,9 +36,7 @@ const Terminal = () => {
             <Text
               color={useColorModeValue('hyperBlue', 'hyperGreen')}
               fontFamily={"'IBMVGA8', monospace"}
-              letterSpacing=".15rem"
-              fontSize={13}
-              fontWeight={700}
+              fontSize={16}
             >
               hugorithm:~$
             </Text>
