@@ -97,7 +97,6 @@ const Page = () => {
           <BioYear>May 2024 - Now</BioYear>
           Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️
         </BioSection>
-
       </Section>
        <Section delay={0.5}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
