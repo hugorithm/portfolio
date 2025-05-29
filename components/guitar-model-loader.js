@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import * as React from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 
 export const GuitarSpinner = () => (
@@ -12,7 +12,7 @@ export const GuitarSpinner = () => (
   />
 )
 
-export const GuitarContainer = forwardRef(({ children }, ref) => (
+export const GuitarContainer = React.forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
     className="guitar-model"
