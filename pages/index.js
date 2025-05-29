@@ -14,7 +14,6 @@ import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import NextLink from "next/link";
 import { MdEmail } from "react-icons/md";
-import { IoDocumentText } from "react-icons/io5";
 import Terminal from "../components/terminal";
 
 
