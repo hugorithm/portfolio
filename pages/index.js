@@ -7,7 +7,9 @@ import {
   Link,
   Button,
   Text,
-  chakra
+  chakra,
+  List,
+  ListItem
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -38,7 +40,7 @@ const Page = () => {
 
             </Heading>
             <Heading as="h2" fontSize={30} variant="page-title" display="flex" gap={2}>
-              I&apos;m a Software Engineer <b>@SWISS</b> 🇨🇭✈️
+              I&apos;m a Software Engineer <strong>@SWISS</strong> 🇨🇭✈️
             </Heading>
           </Box>
           <Box
@@ -94,10 +96,34 @@ const Page = () => {
         </BioSection>
          <BioSection>
           <BioYear>May 2024 - Now</BioYear>
-          Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️
+          Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️ <br></br>
         </BioSection>
       </Section>
-       <Section delay={0.5}>
+       <Section delay={0.6}>
+        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
+          Achievements @SWISS 🇨🇭✈️
+        </Heading>
+        <BioSection>
+          <List>
+            <ListItem>• Built and maintained scalable .NET microservices using C#, Docker, K8s and Elastic contributing to increased reliability and maintainability across internal platforms</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Developed Terraform release pipelines in Azure DevOps, including the setup of a secure service principal with federated credentials and configuration of service connections to enable seamless infrastructure deployments.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Enhanced cloud security by implementing private endpoints across all key Azure resources, ensuring internal-only access and reducing exposure to public networks.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Designed and developed a scalable LLM service for Retrieval-Augmented Generation (RAG) use cases, supporting multiple projects and models (e.g., GPT-4o, text-embedding-3-large). Integrated with Azure AI Search to enable vector, hybrid, and semantic hybrid search capabilities.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Served as Security Champion, driving adoption of secure development practices and overseeing integration of CheckmarxOne and SonarQube into pipelines; Eliminated <strong>100+</strong> critical vulnerabilities in under a <strong>month</strong> and setting a company-wide benchmark as the first and most advanced security adopter 🚀.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Designed and contributed to key Architecture Decision Records (ADRs) that guided system design and ensured alignment with technical and business goals.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• Delivered multiple townhall presentations to an audience of 300+ employees, effectively promoting our team&apos;s achievements and showcasing the platform&apos;s capabilities.</ListItem>
+            <ListItem>&nbsp;</ListItem>
+            <ListItem>• <strong>1st Place</strong>🥇 at Lufthansa Group Agentic AI Hackathon with a <Link as={NextLink} href="https://www.linkedin.com/posts/hug0silva_im-truly-honored-to-have-been-part-of-the-activity-7326608709718040578-TmAZ"><strong>&quot;RetentionAI Solution&quot;</strong></Link></ListItem>
+          </List>
+        </BioSection>
+        </Section>
+       <Section delay={0.6}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Education
         </Heading>
@@ -120,7 +146,7 @@ const Page = () => {
         </BioSection>
       </Section>
 
-      <Section delay={0.6}>
+      <Section delay={0.7}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Things I ❤
         </Heading>
