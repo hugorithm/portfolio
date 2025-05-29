@@ -92,10 +92,10 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>2019 to May 2024</BioYear>
-          Started working at Idryl Technologies as a Software Engineer
+          Worked at Idryl Technologies as a Software Engineer
         </BioSection>
          <BioSection>
-          <BioYear>May 2024</BioYear>
+          <BioYear>May 2024 -&gt; Now</BioYear>
           Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️
         </BioSection>
 
