@@ -79,9 +79,6 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem href="https://github.com/hugorithm/cv/blob/master/cv.pdf" path={path}>
-            Curriculum Vitae
-          </LinkItem>
           <LinkItem href="/masters" path={path}>
             Master&apos;s Thesis
           </LinkItem>
@@ -95,11 +92,6 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-          </LinkItem>
-          <LinkItem
-            href="https://instagram.com/huqosilva"
-            path={path}>
-            <IoLogoInstagram />
           </LinkItem>
           <LinkItem
             href="https://www.linkedin.com/in/hugoandrefsilva"
@@ -119,18 +111,12 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">About</MenuItem>
-                <MenuItem as={MenuLink} href="https://github.com/hugorithm/cv/blob/master/cv.pdf">Curriculum Vitae</MenuItem>
                 <MenuItem as={MenuLink} href="/masters">Master&apos;s Thesis</MenuItem>
                 <MenuItem as={MenuLink} href="/projects">Projects</MenuItem>
                 <MenuItem as={MenuLink} href="https://github.com/hugorithm">
                   <IoLogoGithub />
                   &nbsp;
                   GitHub
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://instagram.com/huqoferreira">
-                  <IoLogoInstagram />
-                  &nbsp;
-                  Intagram
                 </MenuItem>
                 <MenuItem as={MenuLink} href="https://www.linkedin.com/in/hugoandrefsilva">
                   <IoLogoLinkedin />

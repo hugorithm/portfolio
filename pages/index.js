@@ -82,7 +82,6 @@ const Page = () => {
       </Section>
       <Section delay={0.3}>
         <Box align="center" my={4}>
-          <Button as={NextLink} href="https://github.com/hugorithm/cv/blob/master/cv.pdf" borderWidth={1} borderColor={useColorModeValue("hyperBlue", "hyperGreen")}><IoDocumentText />&nbsp; My CV</Button>
           <Button as={NextLink} href="mailto:hugofsilv@gmail.com" ml={5} borderWidth={1} borderColor={useColorModeValue("hyperBlue", "hyperGreen")}><MdEmail />&nbsp; Email me!</Button>
         </Box>
       </Section>
