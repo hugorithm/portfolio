@@ -39,7 +39,7 @@ const Page = () => {
 
             </Heading>
             <Heading as="h2" fontSize={30} variant="page-title" display="flex" gap={2}>
-              I&apos;m a Software Engineer.
+              I&apos;m a Software Engineer @SWISS 🇨🇭✈️
             </Heading>
           </Box>
           <Box
@@ -73,11 +73,11 @@ const Page = () => {
           About Me
         </Heading>
         <Paragraph>
-          Hi, I&apos;m Hugo! I&apos;m a Software Engineer from Portugal with a passion for technology.
+          Hi, I&apos;m Hugo! I&apos;m a Software Engineer based in Switzerland 🇨🇭 with a passion for technology.
         </Paragraph>
         <Paragraph>
           I love learning new things and evolving with the projects I participate in. I&apos;m very attentive to the new tendencies and innovations in technology. When offline, I love to play
-          piano and electric guitar 😁
+          piano and hike ⛰️😁
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -91,20 +91,27 @@ const Page = () => {
           Experience & Events
         </Heading>
         <BioSection>
-          <BioYear>1997</BioYear>
-          Born in Braga, Portugal.
+          <BioYear>2019 to May 2024</BioYear>
+          Started working at Idryl Technologies as a Software Engineer
         </BioSection>
-        <BioSection>
+         <BioSection>
+          <BioYear>May 2024</BioYear>
+          Started working as a Software Engineer at SWISS International Air Lines Ltd. ✈️🇨🇭
+        </BioSection>
+
+      </Section>
+       <Section delay={0.5}>
+        <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
+          Education
+        </Heading>
+         <BioSection>
           <BioYear>2014</BioYear>
           English C1+ certification at the British Institute in Braga
         </BioSection>
-        <BioSection>
-          <BioYear>2019 to Present</BioYear>
-          Started working at Idryl Technologies as a Software Engineer
-        </BioSection>
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Started working on my Master&apos;s Thesis&nbsp;
+          <BioSection>
+          <BioYear>2021</BioYear>
+           Completed my Master&apos;s in Engineering and Management of Information Systems
+          at University of Minho with a grade of 19 out of 20.&nbsp;
 
           <Link as={NextLink} href="/masters"><strong>&quot;Management and Analysis Platform for Data Based in Blockchain Technology&quot;</strong></Link>
 
@@ -114,22 +121,14 @@ const Page = () => {
           <Link href="https://doi.org/10.1016/j.procs.2020.03.073"><strong>&quot;Modular Blockchain Implementation in Intensive Medicine&quot;</strong></Link>
 
         </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Completed my Master&apos;s in Engineering and Management of Information Systems
-          at University of Minho with a grade of 19 out of 20
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Started an A1 German course
-        </BioSection>
       </Section>
-      <Section delay={0.5}>
+
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Things I ❤
         </Heading>
         <Paragraph>
-          Software Engineering 💻, Piano &amp; Electric Guitar 🎸🎶, Sports 🎾⚽, Photography 📷
+          Software Engineering 💻, Piano &amp; Sports 🎾
         </Paragraph>
       </Section>
     </Container>
