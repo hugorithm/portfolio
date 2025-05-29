@@ -39,7 +39,7 @@ const Page = () => {
 
             </Heading>
             <Heading as="h2" fontSize={30} variant="page-title" display="flex" gap={2}>
-              I&apos;m a Software Engineer @SWISS 🇨🇭✈️
+              I&apos;m a Software Engineer <b>@SWISS</b> 🇨🇭✈️
             </Heading>
           </Box>
           <Box
@@ -96,7 +96,7 @@ const Page = () => {
         </BioSection>
          <BioSection>
           <BioYear>May 2024</BioYear>
-          Started working as a Software Engineer at SWISS International Air Lines Ltd. ✈️🇨🇭
+          Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️
         </BioSection>
 
       </Section>
