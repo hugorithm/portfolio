@@ -94,12 +94,12 @@ const Page = () => {
           <BioYear>2019 - May 2024</BioYear>
           Worked at Idryl Technologies as a Software Engineer
         </BioSection>
-         <BioSection>
+        <BioSection>
           <BioYear>May 2024 - Now</BioYear>
           Started working as a Software Engineer at SWISS International Air Lines Ltd. 🇨🇭✈️ <br></br>
         </BioSection>
       </Section>
-       <Section delay={0.6}>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Achievements @SWISS 🇨🇭✈️
         </Heading>
@@ -122,18 +122,18 @@ const Page = () => {
             <ListItem>• <strong>1st Place</strong>🥇 at Lufthansa Group Agentic AI Hackathon with a <Link as={NextLink} href="https://www.linkedin.com/posts/hug0silva_im-truly-honored-to-have-been-part-of-the-activity-7326608709718040578-TmAZ"><strong>&quot;RetentionAI Solution&quot;</strong></Link></ListItem>
           </List>
         </BioSection>
-        </Section>
-       <Section delay={0.6}>
+      </Section>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title" textDecorationColor={useColorModeValue('hyperBlue', 'hyperGreen')}>
           Education
         </Heading>
-         <BioSection>
+        <BioSection>
           <BioYear>2014</BioYear>
-          English C1+ certification at the British Institute in Braga
+          English C1 certification
         </BioSection>
-          <BioSection>
+        <BioSection>
           <BioYear>2021</BioYear>
-           Completed my Master&apos;s in Engineering and Management of Information Systems
+          Completed my Master&apos;s in Engineering and Management of Information Systems
           at University of Minho with a grade of 19 out of 20.&nbsp;
 
           <Link as={NextLink} href="/masters"><strong>&quot;Management and Analysis Platform for Data Based in Blockchain Technology&quot;</strong></Link>
